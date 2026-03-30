@@ -1,26 +1,26 @@
 class SureRm < Formula
   desc "Safer rm replacement that moves files to a recoverable trash store"
   homepage "https://github.com/ChunzhengLab/sure-rm"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ChunzhengLab/sure-rm/releases/download/v0.1.0/sure-rm-v0.1.0-aarch64-apple-darwin.tar.gz"
-      sha256 "954f4cf510aa08038de543e3ebba0e02e0b6fce34d2aed8c771afeec402f9a59"
+      url "https://github.com/ChunzhengLab/sure-rm/releases/download/v0.2.0/sure-rm-v0.2.0-aarch64-apple-darwin.tar.gz"
+      sha256 "f37921004cefb5d84866b7df17c3a0957ea23fb219d1396add58b81db7b4ab9d"
     else
-      url "https://github.com/ChunzhengLab/sure-rm/releases/download/v0.1.0/sure-rm-v0.1.0-x86_64-apple-darwin.tar.gz"
-      sha256 "01b156cea02f870b7fda1b4ceaf06cabb753a07903aec63e688ce6f4d310c29a"
+      url "https://github.com/ChunzhengLab/sure-rm/releases/download/v0.2.0/sure-rm-v0.2.0-x86_64-apple-darwin.tar.gz"
+      sha256 "d4e35449fc0f5a4cf2a72122de15bf011bab9191be1f844aed28739ac0f43636"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/ChunzhengLab/sure-rm/releases/download/v0.1.0/sure-rm-v0.1.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "bf7580bac20f4ba47ea4c36cb25120740a8f92018d64bed44a889c111adef40c"
+      url "https://github.com/ChunzhengLab/sure-rm/releases/download/v0.2.0/sure-rm-v0.2.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "92a0c205242aa471eff4263e88bf3124a62506e1e645d7683d318e995ce257a2"
     else
-      url "https://github.com/ChunzhengLab/sure-rm/releases/download/v0.1.0/sure-rm-v0.1.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "f96fd0761dad1a0b114ff685d55270cbbae899f6cd7a9b146b5e5f4a104d8781"
+      url "https://github.com/ChunzhengLab/sure-rm/releases/download/v0.2.0/sure-rm-v0.2.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "8efd498ac0fc57a25a5b6740fede2412da000cb7e273bebd15bdbc9a16f01823"
     end
   end
 
