@@ -7,20 +7,20 @@ class SureRm < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/ChunzhengLab/sure-rm/releases/download/v0.3.0/sure-rm-v0.3.0-aarch64-apple-darwin.tar.gz"
-      sha256 "9b46a7dc4f37437f65f8352d6e42a2248780525b99c74eab14ae70f918105d5d"
+      sha256 "12d30585aba765d447afe9c55eabba576de5aacaefe8be7c8101c056e72ed595"
     else
       url "https://github.com/ChunzhengLab/sure-rm/releases/download/v0.3.0/sure-rm-v0.3.0-x86_64-apple-darwin.tar.gz"
-      sha256 "600fc3c5e817a8c9e0b209e1ed559eb32d3997eb2f28e07f8582487ab6701999"
+      sha256 "209ae926f2a5b5b0458487ba44beb976dc345f95ffaeb49abdc9778474b1813a"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/ChunzhengLab/sure-rm/releases/download/v0.3.0/sure-rm-v0.3.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "79fb4e2ac1752b68ace94bc5a834a355ad9f00a52d2a8fd1377e6337eb8d4fd1"
+      sha256 "6c407e393ecc8b678b95b7a9c31cf3614728c901d63d167104bf3e89aa14ad07"
     else
       url "https://github.com/ChunzhengLab/sure-rm/releases/download/v0.3.0/sure-rm-v0.3.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "3ac2549edee46d92d0c93f16bc0c77b15a7c3b7f8929faaf33a488e774afda64"
+      sha256 "563c14602f679f205a16d6fff40bf590981f8af2ad5de051885fbde4b5ced89f"
     end
   end
 
