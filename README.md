@@ -17,3 +17,4 @@ brew install sure-rm
 | Formula | Description |
 |---------|-------------|
 | [sure-rm](https://github.com/ChunzhengLab/sure-rm) | Safer rm replacement that moves files to a recoverable trash store |
+| [sure-unpack](https://github.com/ChunzhengLab/sure-unpack) | Universal archive unpacker that auto-detects format and calls the right tool |
