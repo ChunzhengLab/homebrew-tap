@@ -1,7 +1,7 @@
 class Unpack < Formula
-  desc "Universal archive unpacker that auto-detects format and calls the right tool"
+  desc "Universal archive packer and unpacker with header-based format detection"
   homepage "https://github.com/ChunzhengLab/sure-unpack"
-  version "0.2.0"
+  version "0.3.1"
   license "MIT"
 
   depends_on "xz"
@@ -10,29 +10,31 @@ class Unpack < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ChunzhengLab/sure-unpack/releases/download/v0.2.0/sure-unpack-v0.2.0-aarch64-apple-darwin.tar.gz"
-      sha256 "8727604f4a850eb74645a4b43a698cbb4202fba860454b9d7e3ace64b31e6cdf"
+      url "https://github.com/ChunzhengLab/sure-unpack/releases/download/v0.3.1/sure-unpack-v0.3.1-aarch64-apple-darwin.tar.gz"
+      sha256 "36ff3e669baa87647b9c1fcd3b3cebef66353bb4997b6a21ab0a55860a9b2ac9"
     else
-      url "https://github.com/ChunzhengLab/sure-unpack/releases/download/v0.2.0/sure-unpack-v0.2.0-x86_64-apple-darwin.tar.gz"
-      sha256 "1fc3efd14d3404bf7c44c532bedd99567f63b3b2b3753b449f1b73bbd7771ebf"
+      url "https://github.com/ChunzhengLab/sure-unpack/releases/download/v0.3.1/sure-unpack-v0.3.1-x86_64-apple-darwin.tar.gz"
+      sha256 "06740d7c0edd9e6d588d21d6b979dc21a55809e65956e7e9de5f67ad98c5a229"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/ChunzhengLab/sure-unpack/releases/download/v0.2.0/sure-unpack-v0.2.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "b2e823b1e00dcf080f7c9e975ca77d83056e55c42f8b09f8cfce3eb13d855be7"
+      url "https://github.com/ChunzhengLab/sure-unpack/releases/download/v0.3.1/sure-unpack-v0.3.1-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "3cc2f2f6d68eb3fdbb7dd57b0242bdea9aa44de8dc1934bcfce1e338c9ab6d89"
     else
-      url "https://github.com/ChunzhengLab/sure-unpack/releases/download/v0.2.0/sure-unpack-v0.2.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "8460a070dc2ba5a65917e8503a22530ea4f79fde64a8561c542d0cb88bff4318"
+      url "https://github.com/ChunzhengLab/sure-unpack/releases/download/v0.3.1/sure-unpack-v0.3.1-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "eda6f666343174076b5074c0ef2382b2ac9d2a048bbd708e87b6422f6f388f26"
     end
   end
 
   def install
     bin.install "unpack"
+    bin.install "pack"
   end
 
   test do
     assert_match "unpack", shell_output("#{bin}/unpack --help")
+    assert_match "pack", shell_output("#{bin}/pack --help")
   end
 end
