@@ -1,7 +1,7 @@
 class Unpack < Formula
   desc "Universal archive packer and unpacker with header-based format detection"
   homepage "https://github.com/ChunzhengLab/sure-unpack"
-  version "0.3.6"
+  version "0.3.7"
   license "MIT"
 
   depends_on "xz"
@@ -11,21 +11,21 @@ class Unpack < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ChunzhengLab/sure-unpack/releases/download/v0.3.6/sure-unpack-v0.3.6-aarch64-apple-darwin.tar.gz"
-      sha256 "11c899647b438cb9fb498971e4c7408d5d14e32bd4748c8b0219aba9801da4cb"
+      url "https://github.com/ChunzhengLab/sure-unpack/releases/download/v0.3.7/sure-unpack-v0.3.7-aarch64-apple-darwin.tar.gz"
+      sha256 "4d8037763acb600159b404170840ca3ddfbf84695c47df47be340b4de3d394e8"
     else
-      url "https://github.com/ChunzhengLab/sure-unpack/releases/download/v0.3.6/sure-unpack-v0.3.6-x86_64-apple-darwin.tar.gz"
-      sha256 "da4f631db77f78ddb24815cfc61436dfc012a6d47cf5976d3f47caada65c77bc"
+      url "https://github.com/ChunzhengLab/sure-unpack/releases/download/v0.3.7/sure-unpack-v0.3.7-x86_64-apple-darwin.tar.gz"
+      sha256 "6b58ec002c1155b00f450af7b2be916d1f36b086fe93a84d2b539f6abde9cc71"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/ChunzhengLab/sure-unpack/releases/download/v0.3.6/sure-unpack-v0.3.6-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "940da9bfcd26f557c286fd51df9be6e29e9b9cec58be91027ed964135a06678a"
+      url "https://github.com/ChunzhengLab/sure-unpack/releases/download/v0.3.7/sure-unpack-v0.3.7-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "0674741a6cd43e42e09c30197396436710c415b5b11460ecaa47e2aff53eb00b"
     else
-      url "https://github.com/ChunzhengLab/sure-unpack/releases/download/v0.3.6/sure-unpack-v0.3.6-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "7b9f74c67b0861b95649cf47cc8d816f598e7b71b27f96b6cc6a2863297a8f43"
+      url "https://github.com/ChunzhengLab/sure-unpack/releases/download/v0.3.7/sure-unpack-v0.3.7-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "38c07947370b2aea91fe687f16aaec5ed512b48a661b846ce62106c540b8aff4"
     end
   end
 
